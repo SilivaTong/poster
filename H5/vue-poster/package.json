@@ -1,0 +1,42 @@
+{
+  "name": "puhui-app",
+  "description": "A Vue.js project",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --env.dev",
+    "build": "rimraf dist && webpack -p --progress --hide-modules"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.4",
+    "html2canvas": "^1.0.0-rc.3",
+    "qrcodejs2": "^0.0.2",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.6.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-vue-app": "^1.2.0",
+    "css-loader": "^0.27.0",
+    "exports-loader": "^0.7.0",
+    "expose-loader": "^0.7.5",
+    "file-loader": "^0.10.1",
+    "html-webpack-plugin": "^2.30.1",
+    "mint-ui": "^2.2.13",
+    "postcss-loader": "^1.3.3",
+    "postcss-pxtorem": "^4.0.1",
+    "rimraf": "^2.5.4",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+    "vue-loader": "^13.3.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
