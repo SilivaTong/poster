@@ -1,0 +1,28 @@
+
+
+<view class='page'>
+ 
+    <!-- 生成名片悬浮按钮 -->
+    <view class='flex_business' bindtap='saveImageToPhoto'>
+      <view class='business_img'>
+        <image src='../../static/business_icon.png' mode='aspectFit'></image>
+      </view>
+      <text>名片</text>
+    </view>
+  </view>
+  <!--画布 画布尺寸根据UI给定的尺寸 *2  在屏幕外提前绘制好海报 海报绘制需要一定时间--->
+  <canvas canvas-id="shareCanvas" style="width:750px;height:1130px"></canvas>
+  <!--用户点击生成名片按钮先保存至客户相册再展示--->
+  <view hidden='{{hidden}}' class='preview'>
+    <view class='left'></view>
+    <view class='right'></view>
+    <view class='calling_img'>
+      <image src='{{busseUrl}}' mode='widthFit'></image>
+    </view>
+    <view class='calling_text'>图片已保存至相册</view>
+    <view class='close_icon' bindtap='ishidden'>
+      <image src='../../static/closeCard.png' style='width:60rpx;height:60rpx;'></image>
+    </view>
+
+</view>
+
